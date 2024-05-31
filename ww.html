@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Walkers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>White Walkers</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="home-link">Home</a></li>
+                <li><a href="#" id="catalog-link">Catalog</a></li>
+                <li><a href="#" id="about-link">About Us</a></li>
+                <li><a href="#" id="contact-link">Contact</a></li>
+                <li><a href="#" id="cart-link">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home-section" class="main-content">
+        <h2>Welcome to White Walkers</h2>
+        <p>Choose style. Choose comfort.</p>
+    </section>
+
+    <section id="catalog-section" class="main-content" style="display: none;">
+        <section class="product-list">
+            <div class="product">
+                <img src="sneaker1.jpg" alt="Sneaker 1">
+                <h3>Nike Air Force 1 '07</h3>
+                <p>Classic style and unmatched comfort. The Nike Air Force 1 '07 offers excellent cushioning and a stylish look. This model is a perfect addition to any wardrobe.</p>
+                <p class="price">CHF 155</p>
+                <button>Add to Cart</button>
+            </div>
+        
+            <div class="product">
+                <img src="sneaker2.jpg" alt="Sneaker 2">
+                <h3>Nike Phantom Luna 2 Elite SE</h3>
+                <p>Designed for maximum performance. The Nike Phantom Luna 2 Elite SE provides superior ball control and stability. Ideal for professionals and active game enthusiasts.</p>
+                <p class="price">CHF 350</p>
+                <button>Add to Cart</button>
+            </div>
+               
+            <div class="product">
+                <img src="sneaker3.jpg" alt="Sneaker 3">
+                <h3>Nike Air Max Plus III</h3>
+                <p>Modern design and innovative technology. The Nike Air Max Plus III offers superior cushioning and support. Perfect for everyday use and workouts.</p>
+                <p class="price">CHF 200</p>
+                <button>Add to Cart</button>
+            </div>
+        
+            <div class="product">
+                <img src="sneaker4.jpg" alt="Sneaker 4">
+                <h3>Nike Air Force 1</h3>
+                <p>Iconic design and reliable construction. The Nike Air Force 1 offers classic style and comfort. These sneakers are suitable for any occasion, from casual walks to sports activities.</p>
+                <p class="price">CHF 125</p>
+                <button>Add to Cart</button>
+            </div>
+        
+            <div class="product">
+                <img src="sneaker5.jpg" alt="Sneaker 5">
+                <h3>Nike Air Max Plus</h3>
+                <p>Innovative design and exceptional comfort. The Nike Air Max Plus offers maximum cushioning and a stylish look. Ideal for those who value comfort and style.</p>
+                <p class="price">CHF 190</p>
+                <button>Add to Cart</button>
+            </div>
+        
+            <div class="product">
+                <img src="sneaker6.jpg" alt="Sneaker 6">
+                <h3>Nike Air Force 1 GS</h3>
+                <p>Specially designed for young athletes. The Nike Air Force 1 GS offers the same style and comfort as adult models. Perfect for school activities and active recreation.</p>
+                <p class="price">CHF 145</p>
+                <button>Add to Cart</button>
+            </div>
+               
+            <div class="product">
+                <img src="sneaker7.jpg" alt="Sneaker 7">
+                <h3>Nike Air Force 1</h3>
+                <p>A classic choice for all ages. The Nike Air Force 1 offers durability and style. These sneakers will be a great addition to any wardrobe.</p>
+                <p class="price">CHF 175</p>
+                <button>Add to Cart</button>
+            </div>
+        
+            <div class="product">
+                <img src="sneaker8.jpg" alt="Sneaker 8">
+                <h3>Nike Air Force 1 '07</h3>
+                <p>The return of a legend. The Nike Air Force 1 '07 offers an updated design and unmatched comfort. These sneakers combine classic and modern technology.</p>
+                <p class="price">CHF 155</p>
+                <button>Add to Cart</button>
+            </div>    
+        </section>
+    </section>
+
+    <section id="about-section" class="main-content" style="display: none;">
+        <h2>About us</h2>
+        <p>Welcome to White Walkers, a company born from a passion for footwear and a commitment to quality.</p>
+        <p>Our journey began in 2005 when our founder, Sarah Johnson, started designing and crafting custom sneakers from her garage. What started as a small passion project quickly grew into something much larger as word spread about Sarah's unique designs and attention to detail.</p>
+        <p>In 2010, White Walkers officially launched as a brand, focusing on producing high-quality sneakers that combine style and comfort. Our dedication to craftsmanship and innovation has allowed us to grow rapidly, and today we're proud to be a leading name in the footwear industry.</p>
+        <p>At White Walkers, we believe in pushing boundaries and redefining what's possible in footwear. Our team of designers and engineers work tirelessly to create sneakers that not only look great but also perform exceptionally well in any situation.</p>
+        <p>Join us on our journey as we continue to innovate and inspire through our commitment to excellence.</p>
+    </section>
+
+    <section id="contact-section" class="main-content" style="display: none;">
+        <h2>Contact us</h2>
+        <p>Have a question or feedback? Reach out to us using the form below:</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="cart-section" class="main-content" style="display: none;">
+        <h2>Cart</h2>
+        <div id="cart"></div>
+        <div id="cart-total"></div>
+        <h3>Choose a Payment Method</h3>
+        <div id="payment-methods">
+            <label>
+                <input type="radio" name="payment-method" value="credit-card" checked>
+                Credit Card
+            </label>
+            <label>
+                <input type="radio" name="payment-method" value="paypal">
+                PayPal
+            </label>
+            <label>
+                <input type="radio" name="payment-method" value="bank-transfer">
+                Bank Transfer
+            </label>
+        </div>
+        <button id="checkout-button">Checkout</button>
+    </section>
+
+    <footer id="footer">
+        <p>&copy; 2024 White Walkers. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var cartItems = [];
+
+            function addToCart(id, name, price, image) {
+                var existingItem = cartItems.find(item => item.id === id);
+                if (existingItem) {
+                    existingItem.quantity++;
+                } else {
+                    cartItems.push({ id, name, price: parseFloat(price), image, quantity: 1 });
+                }
+                updateCartDisplay();
+            }
+
+            function updateCartDisplay() {
+                var cart = document.getElementById("cart");
+                var cartTotal = document.getElementById("cart-total");
+                cart.innerHTML = "";
+                var total = 0;
+
+                cartItems.forEach(function(item) {
+                    var cartItem = document.createElement("div");
+                    cartItem.classList.add("cart-item");
+
+                    var img = document.createElement("img");
+                    img.src = item.image;
+                    img.alt = item.name;
+                    img.classList.add("cart-item-image");
+
+                    var itemName = document.createElement("span");
+                    itemName.textContent = item.name + " x" + item.quantity;
+                    itemName.classList.add("cart-item-name");
+
+                    var itemPrice = document.createElement("span");
+                    var totalPrice = (item.price * item.quantity).toFixed(2).replace(/\.00$/, "");
+                    itemPrice.textContent = " - CHF " + totalPrice;
+                    itemPrice.classList.add("cart-item-price");
+
+                    total += item.price * item.quantity;
+
+                    cartItem.appendChild(img);
+                    cartItem.appendChild(itemName);
+                    cartItem.appendChild(itemPrice);
+
+                    cart.appendChild(cartItem);
+                });
+
+                var formattedTotal = total.toFixed(2).replace(/\.00$/, "");
+                cartTotal.textContent = "Total: CHF " + formattedTotal;
+                cartTotal.classList.add("cart-total-price");
+            }
+
+            var addToCartButtons = document.querySelectorAll(".product button");
+            addToCartButtons.forEach(function(button, index) {
+                button.addEventListener("click", function() {
+                    var product = button.parentElement;
+                    var id = index;
+                    var name = product.querySelector("h3").textContent;
+                    var price = product.querySelector(".price").textContent.replace("CHF ", "");
+                    var image = product.querySelector("img").src;
+                    addToCart(id, name, price, image);
+                });
+            });
+
+            var homeLink = document.getElementById("home-link");
+            var catalogLink = document.getElementById("catalog-link");
+            var aboutLink = document.getElementById("about-link");
+            var contactLink = document.getElementById("contact-link");
+            var cartLink = document.getElementById("cart-link");
+            var homeSection = document.getElementById("home-section");
+            var catalogSection = document.getElementById("catalog-section");
+            var aboutSection = document.getElementById("about-section");
+            var contactSection = document.getElementById("contact-section");
+            var cartSection = document.getElementById("cart-section");
+
+            homeLink.addEventListener("click", function(event) {
+                event.preventDefault();
+                homeSection.style.display = "block";
+                catalogSection.style.display = "none";
+                aboutSection.style.display = "none";
+                contactSection.style.display = "none";
+                cartSection.style.display = "none";
+            });
+
+            catalogLink.addEventListener("click", function(event) {
+                event.preventDefault();
+                catalogSection.style.display = "block";
+                homeSection.style.display = "none";
+                aboutSection.style.display = "none";
+                contactSection.style.display = "none";
+                cartSection.style.display = "none";
+            });
+
+            aboutLink.addEventListener("click", function(event) {
+                event.preventDefault();
+                aboutSection.style.display = "block";
+                homeSection.style.display = "none";
+                catalogSection.style.display = "none";
+                contactSection.style.display = "none";
+                cartSection.style.display = "none";
+            });
+
+            contactLink.addEventListener("click", function(event) {
+                event.preventDefault();
+                contactSection.style.display = "block";
+                homeSection.style.display = "none";
+                catalogSection.style.display = "none";
+                aboutSection.style.display = "none";
+                cartSection.style.display = "none";
+            });
+
+            cartLink.addEventListener("click", function(event) {
+                event.preventDefault();
+                cartSection.style.display = "block";
+                homeSection.style.display = "none";
+                catalogSection.style.display = "none";
+                aboutSection.style.display = "none";
+                contactSection.style.display = "none";
+            });
+
+            var contactForm = document.getElementById("contact-form");
+            contactForm.addEventListener("submit", function(event) {
+                event.preventDefault();
+                var formData = new FormData(contactForm);
+                for (var pair of formData.entries()) {
+                    console.log(pair[0] + ': ' + pair[1]);
+                }
+
+                alert("Thank you for your message! We'll get back to you soon.");
+
+                contactForm.reset();
+            });
+        });
+    </script>
+</body>
+</html>
